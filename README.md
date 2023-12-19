@@ -1,4 +1,4 @@
-### Test Backend (Node Js) (Sequelize ORM)
+# Test Backend (Node Js) (Sequelize ORM)
 
 ## Installation 
 ```bash
@@ -32,4 +32,12 @@ npm run start
 The Business API provides endpoints to manage business data.
 
 ## Endpoint: GET /api/businesses
-# Description: Fetch a list of businesses based on various parameters.
+### Description: Fetch a list of businesses based on various query parameters.
+### Query Parameters
+<ol>
+  <li>term</li>
+  <li>location</li>
+  <li>price</li>
+  <li>categories</li>
+  <li>limit</li>
+</ol>
