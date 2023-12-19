@@ -7,7 +7,7 @@ npm run install
 
 ## Setup
 
-config the database and run this script
+change the database config on [config.json](https://github.com/Nacho7S/62teknologi-backend-test-Fairis-Nabil-Ansana/blob/main/config/config.json) and run this script
 ```bash
 npx sequelize db:create
 ```
