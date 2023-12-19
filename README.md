@@ -27,3 +27,9 @@ running server (port: 3000)
 ```bash
 npm run start
 ```
+
+### Business API
+The Business API provides endpoints to manage business data.
+
+## Endpoint: GET /api/businesses
+# Description: Fetch a list of businesses based on various parameters.
