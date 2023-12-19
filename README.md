@@ -189,4 +189,22 @@ http://localhost:3000?categories=korea&term=Her Name&limit=10&price=2&location=n
 }
 ```
 
+## Delete a business
 
+### Endpoint: DELETE http://localhost:3000/id
+### URL Parameters:
+
+<ul>
+  <li>
+    id: Business ID
+  </li>
+</ul>
+
+### Response: 
+#### Status Code: 200 OK
+#### Body
+```json
+{
+  "message": "Successfully deleted the business."
+}
+```
