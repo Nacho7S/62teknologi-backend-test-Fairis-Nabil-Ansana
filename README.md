@@ -28,7 +28,7 @@ running server (port: 3000)
 npm run start
 ```
 
-### Business API
+## Business API
 The Business API provides endpoints to manage business data.
 
 ## Endpoint: GET /api/businesses
@@ -41,3 +41,43 @@ The Business API provides endpoints to manage business data.
   <li>categories</li>
   <li>limit</li>
 </ol>
+
+
+### Responses:
+#### Status code: 200 ok
+#### Body:
+```json
+{
+  "business": [
+    {
+      "id": "unique_business_id",
+      "alias": "business-alias",
+      "name": "Business Name",
+      "image_url": "https://business-image-url.com",
+      "is_closed": false,
+      "url": "https://business-url.com",
+      "review_count": 123,
+      "categories": ["Category1", "Category2"],
+      "rating": 4.5,
+      "coordinates": { "latitude": 40.123, "longitude": -73.456 },
+      "transactions": ["pickup"],
+      "price": "$$",
+      "location": { "address1": "123 Main St", "city": "City", "state": "State", "zip_code": "12345" },
+      "phone": "+1234567890",
+      "display_phone": "+1 234-567-890",
+      "distance": 1234.56,
+      "createdAt": "2023-12-19T02:34:28.719Z",
+      "updatedAt": "2023-12-19T02:34:28.719Z"
+    },
+    // ... more businesses
+  ],
+  "totalPages": 5
+}
+```
+##### Example Query
+```bash
+http://localhost:3000?categories=korea&term=Her Name&limit=10&price=2&location=new york
+```
+
+## Add a Business
+
