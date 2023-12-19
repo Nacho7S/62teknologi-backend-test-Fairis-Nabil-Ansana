@@ -81,7 +81,7 @@ http://localhost:3000?categories=korea&term=Her Name&limit=10&price=2&location=n
 ```
 
 ## Add a Business
-### Endpoind:  POST http:localhost:3000
+### Endpoint:  POST http:localhost:3000
 ### Request Body
 ```json
 {
@@ -162,4 +162,31 @@ http://localhost:3000?categories=korea&term=Her Name&limit=10&price=2&location=n
   "message": "Success add a business"
 }
 ```
+## Edit A Business
+
+### Endpoint: PUT http:localhost:3000/id
+### URL Parameters:
+
+<ul>
+  <li>
+    id : Business ID
+  </li>
+</ul>
+
+### Request Body
+```json
+{
+  "alias": "new-alias",
+  // ... other fields to update
+}
+```
+### Response:
+#### Status code: 200 OK
+#### Body: 
+```json
+{
+  "message": "Success update a business"
+}
+```
+
 
